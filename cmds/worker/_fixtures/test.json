@@ -1,0 +1,940 @@
+{
+  "response": {
+    "version": "0.1",
+    "termsofService": "http://www.wunderground.com/weather/api/d/terms.html",
+    "features": {
+      "forecast10day": 1
+    }
+  },
+  "forecast": {
+    "txt_forecast": {
+      "date": "5:32 PM EST",
+      "forecastday": [
+        {
+          "period": 0,
+          "icon": "cloudy",
+          "icon_url": "http://icons.wxug.com/i/c/k/cloudy.gif",
+          "title": "Wednesday",
+          "fcttext": "Mostly cloudy. Lows overnight in the low teens.",
+          "fcttext_metric": "Cloudy. Low -11C.",
+          "pop": "20"
+        },
+        {
+          "period": 1,
+          "icon": "nt_cloudy",
+          "icon_url": "http://icons.wxug.com/i/c/k/nt_cloudy.gif",
+          "title": "Wednesday Night",
+          "fcttext": "Cloudy skies. Low 13F. Winds NNW at 10 to 20 mph.",
+          "fcttext_metric": "Cloudy skies. Low -11C. Winds NNW at 15 to 30 km/h.",
+          "pop": "20"
+        },
+        {
+          "period": 2,
+          "icon": "partlycloudy",
+          "icon_url": "http://icons.wxug.com/i/c/k/partlycloudy.gif",
+          "title": "Thursday",
+          "fcttext": "Partly cloudy skies. High 22F. Winds NNW at 10 to 15 mph.",
+          "fcttext_metric": "Intervals of clouds and sunshine. High -6C. Winds NNW at 10 to 15 km/h.",
+          "pop": "0"
+        },
+        {
+          "period": 3,
+          "icon": "nt_clear",
+          "icon_url": "http://icons.wxug.com/i/c/k/nt_clear.gif",
+          "title": "Thursday Night",
+          "fcttext": "Clear skies. Low around 5F. Winds NNW at 5 to 10 mph.",
+          "fcttext_metric": "A mostly clear sky. Low near -15C. Winds NNW at 10 to 15 km/h.",
+          "pop": "0"
+        },
+        {
+          "period": 4,
+          "icon": "clear",
+          "icon_url": "http://icons.wxug.com/i/c/k/clear.gif",
+          "title": "Friday",
+          "fcttext": "Sunny. High 29F. Winds SSW at 10 to 15 mph.",
+          "fcttext_metric": "Mainly sunny. High -1C. Winds SSW at 15 to 25 km/h.",
+          "pop": "0"
+        },
+        {
+          "period": 5,
+          "icon": "nt_partlycloudy",
+          "icon_url": "http://icons.wxug.com/i/c/k/nt_partlycloudy.gif",
+          "title": "Friday Night",
+          "fcttext": "Clear skies in the evening then becoming cloudy overnight. Low 21F. Winds SSW at 10 to 15 mph.",
+          "fcttext_metric": "Clear during the evening followed by cloudy skies overnight. Low -6C. Winds SSW at 10 to 15 km/h.",
+          "pop": "10"
+        },
+        {
+          "period": 6,
+          "icon": "partlycloudy",
+          "icon_url": "http://icons.wxug.com/i/c/k/partlycloudy.gif",
+          "title": "Saturday",
+          "fcttext": "Cloudy early with partial sunshine expected late. High 43F. Winds WSW at 10 to 20 mph.",
+          "fcttext_metric": "Cloudy early with partial sunshine expected late. High 6C. Winds WSW at 15 to 30 km/h.",
+          "pop": "10"
+        },
+        {
+          "period": 7,
+          "icon": "nt_mostlycloudy",
+          "icon_url": "http://icons.wxug.com/i/c/k/nt_mostlycloudy.gif",
+          "title": "Saturday Night",
+          "fcttext": "Partly cloudy skies in the evening, then becoming cloudy overnight. Low around 25F. W winds shifting to S at 10 to 15 mph.",
+          "fcttext_metric": "Partly cloudy skies during the evening will give way to cloudy skies overnight. Low -4C. Winds SW at 10 to 15 km/h.",
+          "pop": "20"
+        },
+        {
+          "period": 8,
+          "icon": "partlycloudy",
+          "icon_url": "http://icons.wxug.com/i/c/k/partlycloudy.gif",
+          "title": "Sunday",
+          "fcttext": "Partly cloudy. High 43F. Winds SW at 5 to 10 mph.",
+          "fcttext_metric": "Intervals of clouds and sunshine. High 6C. Winds SW at 10 to 15 km/h.",
+          "pop": "10"
+        },
+        {
+          "period": 9,
+          "icon": "nt_partlycloudy",
+          "icon_url": "http://icons.wxug.com/i/c/k/nt_partlycloudy.gif",
+          "title": "Sunday Night",
+          "fcttext": "Partly cloudy. Low 28F. Winds WSW at 5 to 10 mph.",
+          "fcttext_metric": "A few clouds from time to time. Low -2C. Winds WSW at 10 to 15 km/h.",
+          "pop": "10"
+        },
+        {
+          "period": 10,
+          "icon": "clear",
+          "icon_url": "http://icons.wxug.com/i/c/k/clear.gif",
+          "title": "Monday",
+          "fcttext": "Sunny, along with a few afternoon clouds. High 46F. Winds WSW at 5 to 10 mph.",
+          "fcttext_metric": "Sunshine and some clouds. High 8C. Winds WSW at 10 to 15 km/h.",
+          "pop": "10"
+        },
+        {
+          "period": 11,
+          "icon": "nt_partlycloudy",
+          "icon_url": "http://icons.wxug.com/i/c/k/nt_partlycloudy.gif",
+          "title": "Monday Night",
+          "fcttext": "A few clouds. Low 31F. Winds S at 5 to 10 mph.",
+          "fcttext_metric": "Partly cloudy. Low near 0C. Winds S at 10 to 15 km/h.",
+          "pop": "0"
+        },
+        {
+          "period": 12,
+          "icon": "clear",
+          "icon_url": "http://icons.wxug.com/i/c/k/clear.gif",
+          "title": "Tuesday",
+          "fcttext": "Mostly sunny skies. High near 50F. Winds SSW at 5 to 10 mph.",
+          "fcttext_metric": "Mostly sunny skies. High around 10C. Winds SSW at 10 to 15 km/h.",
+          "pop": "0"
+        },
+        {
+          "period": 13,
+          "icon": "nt_clear",
+          "icon_url": "http://icons.wxug.com/i/c/k/nt_clear.gif",
+          "title": "Tuesday Night",
+          "fcttext": "A few clouds from time to time. Low 34F. Winds SSW at 5 to 10 mph.",
+          "fcttext_metric": "Mostly clear skies. Low 1C. Winds SSW at 10 to 15 km/h.",
+          "pop": "20"
+        },
+        {
+          "period": 14,
+          "icon": "clear",
+          "icon_url": "http://icons.wxug.com/i/c/k/clear.gif",
+          "title": "Wednesday",
+          "fcttext": "Generally sunny. High near 55F. Winds SSW at 5 to 10 mph.",
+          "fcttext_metric": "Generally sunny. High 13C. Winds SSW at 10 to 15 km/h.",
+          "pop": "20"
+        },
+        {
+          "period": 15,
+          "icon": "nt_clear",
+          "icon_url": "http://icons.wxug.com/i/c/k/nt_clear.gif",
+          "title": "Wednesday Night",
+          "fcttext": "Mostly clear skies. Low near 35F. Winds WSW at 5 to 10 mph.",
+          "fcttext_metric": "Mostly clear skies. Low 2C. Winds WSW at 10 to 15 km/h.",
+          "pop": "10"
+        },
+        {
+          "period": 16,
+          "icon": "clear",
+          "icon_url": "http://icons.wxug.com/i/c/k/clear.gif",
+          "title": "Thursday",
+          "fcttext": "Mostly sunny skies. High around 55F. Winds NNE at 5 to 10 mph.",
+          "fcttext_metric": "Mostly sunny skies. High 13C. Winds NNE at 10 to 15 km/h.",
+          "pop": "20"
+        },
+        {
+          "period": 17,
+          "icon": "nt_clear",
+          "icon_url": "http://icons.wxug.com/i/c/k/nt_clear.gif",
+          "title": "Thursday Night",
+          "fcttext": "Mainly clear skies. Low 36F. Winds NE at 10 to 15 mph.",
+          "fcttext_metric": "Mostly clear skies. Low 2C. Winds NE at 15 to 25 km/h.",
+          "pop": "20"
+        },
+        {
+          "period": 18,
+          "icon": "partlycloudy",
+          "icon_url": "http://icons.wxug.com/i/c/k/partlycloudy.gif",
+          "title": "Friday",
+          "fcttext": "Partly cloudy skies. High near 45F. Winds NE at 10 to 20 mph.",
+          "fcttext_metric": "Partly cloudy skies. High 7C. Winds NE at 15 to 30 km/h.",
+          "pop": "20"
+        },
+        {
+          "period": 19,
+          "icon": "nt_partlycloudy",
+          "icon_url": "http://icons.wxug.com/i/c/k/nt_partlycloudy.gif",
+          "title": "Friday Night",
+          "fcttext": "Clear to partly cloudy. Low 34F. Winds ENE at 10 to 15 mph.",
+          "fcttext_metric": "A few clouds. Low 1C. Winds ENE at 15 to 25 km/h.",
+          "pop": "20"
+        }
+      ]
+    },
+    "simpleforecast": {
+      "forecastday": [
+        {
+          "date": {
+            "epoch": "1425513600",
+            "pretty": "7:00 PM EST on March 04, 2015",
+            "day": 4,
+            "month": 3,
+            "year": 2015,
+            "yday": 62,
+            "hour": 19,
+            "min": "00",
+            "sec": 0,
+            "isdst": "0",
+            "monthname": "March",
+            "monthname_short": "Mar",
+            "weekday_short": "Wed",
+            "weekday": "Wednesday",
+            "ampm": "PM",
+            "tz_short": "EST",
+            "tz_long": "America/Indianapolis"
+          },
+          "period": 1,
+          "high": {
+            "fahrenheit": "36",
+            "celsius": "2"
+          },
+          "low": {
+            "fahrenheit": "13",
+            "celsius": "-11"
+          },
+          "conditions": "Overcast",
+          "icon": "cloudy",
+          "icon_url": "http://icons.wxug.com/i/c/k/cloudy.gif",
+          "skyicon": "",
+          "pop": 20,
+          "qpf_allday": {
+            "in": 0.00,
+            "mm": 0
+          },
+          "qpf_day": {
+            "in": null,
+            "mm": null
+          },
+          "qpf_night": {
+            "in": 0.00,
+            "mm": 0
+          },
+          "snow_allday": {
+            "in": 0.0,
+            "cm": 0.0
+          },
+          "snow_day": {
+            "in": null,
+            "cm": null
+          },
+          "snow_night": {
+            "in": 0.0,
+            "cm": 0.0
+          },
+          "maxwind": {
+            "mph": 12,
+            "kph": 20,
+            "dir": "",
+            "degrees": 0
+          },
+          "avewind": {
+            "mph": 2,
+            "kph": 3,
+            "dir": "NW",
+            "degrees": 324
+          },
+          "avehumidity": 66,
+          "maxhumidity": 0,
+          "minhumidity": 0
+        },
+        {
+          "date": {
+            "epoch": "1425600000",
+            "pretty": "7:00 PM EST on March 05, 2015",
+            "day": 5,
+            "month": 3,
+            "year": 2015,
+            "yday": 63,
+            "hour": 19,
+            "min": "00",
+            "sec": 0,
+            "isdst": "0",
+            "monthname": "March",
+            "monthname_short": "Mar",
+            "weekday_short": "Thu",
+            "weekday": "Thursday",
+            "ampm": "PM",
+            "tz_short": "EST",
+            "tz_long": "America/Indianapolis"
+          },
+          "period": 2,
+          "high": {
+            "fahrenheit": "22",
+            "celsius": "-6"
+          },
+          "low": {
+            "fahrenheit": "5",
+            "celsius": "-15"
+          },
+          "conditions": "Partly Cloudy",
+          "icon": "partlycloudy",
+          "icon_url": "http://icons.wxug.com/i/c/k/partlycloudy.gif",
+          "skyicon": "",
+          "pop": 0,
+          "qpf_allday": {
+            "in": 0.00,
+            "mm": 0
+          },
+          "qpf_day": {
+            "in": 0.00,
+            "mm": 0
+          },
+          "qpf_night": {
+            "in": 0.00,
+            "mm": 0
+          },
+          "snow_allday": {
+            "in": 0.0,
+            "cm": 0.0
+          },
+          "snow_day": {
+            "in": 0.0,
+            "cm": 0.0
+          },
+          "snow_night": {
+            "in": 0.0,
+            "cm": 0.0
+          },
+          "maxwind": {
+            "mph": 15,
+            "kph": 24,
+            "dir": "NNW",
+            "degrees": 330
+          },
+          "avewind": {
+            "mph": 10,
+            "kph": 16,
+            "dir": "NNW",
+            "degrees": 330
+          },
+          "avehumidity": 59,
+          "maxhumidity": 0,
+          "minhumidity": 0
+        },
+        {
+          "date": {
+            "epoch": "1425686400",
+            "pretty": "7:00 PM EST on March 06, 2015",
+            "day": 6,
+            "month": 3,
+            "year": 2015,
+            "yday": 64,
+            "hour": 19,
+            "min": "00",
+            "sec": 0,
+            "isdst": "0",
+            "monthname": "March",
+            "monthname_short": "Mar",
+            "weekday_short": "Fri",
+            "weekday": "Friday",
+            "ampm": "PM",
+            "tz_short": "EST",
+            "tz_long": "America/Indianapolis"
+          },
+          "period": 3,
+          "high": {
+            "fahrenheit": "29",
+            "celsius": "-2"
+          },
+          "low": {
+            "fahrenheit": "21",
+            "celsius": "-6"
+          },
+          "conditions": "Clear",
+          "icon": "clear",
+          "icon_url": "http://icons.wxug.com/i/c/k/clear.gif",
+          "skyicon": "",
+          "pop": 0,
+          "qpf_allday": {
+            "in": 0.00,
+            "mm": 0
+          },
+          "qpf_day": {
+            "in": 0.00,
+            "mm": 0
+          },
+          "qpf_night": {
+            "in": 0.00,
+            "mm": 0
+          },
+          "snow_allday": {
+            "in": 0.0,
+            "cm": 0.0
+          },
+          "snow_day": {
+            "in": 0.0,
+            "cm": 0.0
+          },
+          "snow_night": {
+            "in": 0.0,
+            "cm": 0.0
+          },
+          "maxwind": {
+            "mph": 15,
+            "kph": 24,
+            "dir": "SSW",
+            "degrees": 199
+          },
+          "avewind": {
+            "mph": 12,
+            "kph": 19,
+            "dir": "SSW",
+            "degrees": 199
+          },
+          "avehumidity": 59,
+          "maxhumidity": 0,
+          "minhumidity": 0
+        },
+        {
+          "date": {
+            "epoch": "1425772800",
+            "pretty": "7:00 PM EST on March 07, 2015",
+            "day": 7,
+            "month": 3,
+            "year": 2015,
+            "yday": 65,
+            "hour": 19,
+            "min": "00",
+            "sec": 0,
+            "isdst": "0",
+            "monthname": "March",
+            "monthname_short": "Mar",
+            "weekday_short": "Sat",
+            "weekday": "Saturday",
+            "ampm": "PM",
+            "tz_short": "EST",
+            "tz_long": "America/Indianapolis"
+          },
+          "period": 4,
+          "high": {
+            "fahrenheit": "43",
+            "celsius": "6"
+          },
+          "low": {
+            "fahrenheit": "25",
+            "celsius": "-4"
+          },
+          "conditions": "Partly Cloudy",
+          "icon": "partlycloudy",
+          "icon_url": "http://icons.wxug.com/i/c/k/partlycloudy.gif",
+          "skyicon": "",
+          "pop": 10,
+          "qpf_allday": {
+            "in": 0.00,
+            "mm": 0
+          },
+          "qpf_day": {
+            "in": 0.00,
+            "mm": 0
+          },
+          "qpf_night": {
+            "in": 0.00,
+            "mm": 0
+          },
+          "snow_allday": {
+            "in": 0.0,
+            "cm": 0.0
+          },
+          "snow_day": {
+            "in": 0.0,
+            "cm": 0.0
+          },
+          "snow_night": {
+            "in": 0.0,
+            "cm": 0.0
+          },
+          "maxwind": {
+            "mph": 20,
+            "kph": 32,
+            "dir": "WSW",
+            "degrees": 237
+          },
+          "avewind": {
+            "mph": 13,
+            "kph": 21,
+            "dir": "WSW",
+            "degrees": 237
+          },
+          "avehumidity": 69,
+          "maxhumidity": 0,
+          "minhumidity": 0
+        },
+        {
+          "date": {
+            "epoch": "1425855600",
+            "pretty": "7:00 PM EDT on March 08, 2015",
+            "day": 8,
+            "month": 3,
+            "year": 2015,
+            "yday": 66,
+            "hour": 19,
+            "min": "00",
+            "sec": 0,
+            "isdst": "1",
+            "monthname": "March",
+            "monthname_short": "Mar",
+            "weekday_short": "Sun",
+            "weekday": "Sunday",
+            "ampm": "PM",
+            "tz_short": "EDT",
+            "tz_long": "America/Indianapolis"
+          },
+          "period": 5,
+          "high": {
+            "fahrenheit": "43",
+            "celsius": "6"
+          },
+          "low": {
+            "fahrenheit": "28",
+            "celsius": "-2"
+          },
+          "conditions": "Partly Cloudy",
+          "icon": "partlycloudy",
+          "icon_url": "http://icons.wxug.com/i/c/k/partlycloudy.gif",
+          "skyicon": "",
+          "pop": 10,
+          "qpf_allday": {
+            "in": 0.00,
+            "mm": 0
+          },
+          "qpf_day": {
+            "in": 0.00,
+            "mm": 0
+          },
+          "qpf_night": {
+            "in": 0.00,
+            "mm": 0
+          },
+          "snow_allday": {
+            "in": 0.0,
+            "cm": 0.0
+          },
+          "snow_day": {
+            "in": 0.0,
+            "cm": 0.0
+          },
+          "snow_night": {
+            "in": 0.0,
+            "cm": 0.0
+          },
+          "maxwind": {
+            "mph": 10,
+            "kph": 16,
+            "dir": "SW",
+            "degrees": 228
+          },
+          "avewind": {
+            "mph": 9,
+            "kph": 14,
+            "dir": "SW",
+            "degrees": 228
+          },
+          "avehumidity": 73,
+          "maxhumidity": 0,
+          "minhumidity": 0
+        },
+        {
+          "date": {
+            "epoch": "1425942000",
+            "pretty": "7:00 PM EDT on March 09, 2015",
+            "day": 9,
+            "month": 3,
+            "year": 2015,
+            "yday": 67,
+            "hour": 19,
+            "min": "00",
+            "sec": 0,
+            "isdst": "1",
+            "monthname": "March",
+            "monthname_short": "Mar",
+            "weekday_short": "Mon",
+            "weekday": "Monday",
+            "ampm": "PM",
+            "tz_short": "EDT",
+            "tz_long": "America/Indianapolis"
+          },
+          "period": 6,
+          "high": {
+            "fahrenheit": "46",
+            "celsius": "8"
+          },
+          "low": {
+            "fahrenheit": "31",
+            "celsius": "-1"
+          },
+          "conditions": "Clear",
+          "icon": "clear",
+          "icon_url": "http://icons.wxug.com/i/c/k/clear.gif",
+          "skyicon": "",
+          "pop": 10,
+          "qpf_allday": {
+            "in": 0.00,
+            "mm": 0
+          },
+          "qpf_day": {
+            "in": 0.00,
+            "mm": 0
+          },
+          "qpf_night": {
+            "in": 0.00,
+            "mm": 0
+          },
+          "snow_allday": {
+            "in": 0.0,
+            "cm": 0.0
+          },
+          "snow_day": {
+            "in": 0.0,
+            "cm": 0.0
+          },
+          "snow_night": {
+            "in": 0.0,
+            "cm": 0.0
+          },
+          "maxwind": {
+            "mph": 10,
+            "kph": 16,
+            "dir": "WSW",
+            "degrees": 256
+          },
+          "avewind": {
+            "mph": 6,
+            "kph": 10,
+            "dir": "WSW",
+            "degrees": 256
+          },
+          "avehumidity": 77,
+          "maxhumidity": 0,
+          "minhumidity": 0
+        },
+        {
+          "date": {
+            "epoch": "1426028400",
+            "pretty": "7:00 PM EDT on March 10, 2015",
+            "day": 10,
+            "month": 3,
+            "year": 2015,
+            "yday": 68,
+            "hour": 19,
+            "min": "00",
+            "sec": 0,
+            "isdst": "1",
+            "monthname": "March",
+            "monthname_short": "Mar",
+            "weekday_short": "Tue",
+            "weekday": "Tuesday",
+            "ampm": "PM",
+            "tz_short": "EDT",
+            "tz_long": "America/Indianapolis"
+          },
+          "period": 7,
+          "high": {
+            "fahrenheit": "50",
+            "celsius": "10"
+          },
+          "low": {
+            "fahrenheit": "34",
+            "celsius": "1"
+          },
+          "conditions": "Clear",
+          "icon": "clear",
+          "icon_url": "http://icons.wxug.com/i/c/k/clear.gif",
+          "skyicon": "",
+          "pop": 0,
+          "qpf_allday": {
+            "in": 0.00,
+            "mm": 0
+          },
+          "qpf_day": {
+            "in": 0.00,
+            "mm": 0
+          },
+          "qpf_night": {
+            "in": 0.00,
+            "mm": 0
+          },
+          "snow_allday": {
+            "in": 0.0,
+            "cm": 0.0
+          },
+          "snow_day": {
+            "in": 0.0,
+            "cm": 0.0
+          },
+          "snow_night": {
+            "in": 0.0,
+            "cm": 0.0
+          },
+          "maxwind": {
+            "mph": 10,
+            "kph": 16,
+            "dir": "SSW",
+            "degrees": 207
+          },
+          "avewind": {
+            "mph": 9,
+            "kph": 14,
+            "dir": "SSW",
+            "degrees": 207
+          },
+          "avehumidity": 74,
+          "maxhumidity": 0,
+          "minhumidity": 0
+        },
+        {
+          "date": {
+            "epoch": "1426114800",
+            "pretty": "7:00 PM EDT on March 11, 2015",
+            "day": 11,
+            "month": 3,
+            "year": 2015,
+            "yday": 69,
+            "hour": 19,
+            "min": "00",
+            "sec": 0,
+            "isdst": "1",
+            "monthname": "March",
+            "monthname_short": "Mar",
+            "weekday_short": "Wed",
+            "weekday": "Wednesday",
+            "ampm": "PM",
+            "tz_short": "EDT",
+            "tz_long": "America/Indianapolis"
+          },
+          "period": 8,
+          "high": {
+            "fahrenheit": "55",
+            "celsius": "13"
+          },
+          "low": {
+            "fahrenheit": "35",
+            "celsius": "2"
+          },
+          "conditions": "Clear",
+          "icon": "clear",
+          "icon_url": "http://icons.wxug.com/i/c/k/clear.gif",
+          "skyicon": "",
+          "pop": 20,
+          "qpf_allday": {
+            "in": 0.00,
+            "mm": 0
+          },
+          "qpf_day": {
+            "in": 0.00,
+            "mm": 0
+          },
+          "qpf_night": {
+            "in": 0.00,
+            "mm": 0
+          },
+          "snow_allday": {
+            "in": 0.0,
+            "cm": 0.0
+          },
+          "snow_day": {
+            "in": 0.0,
+            "cm": 0.0
+          },
+          "snow_night": {
+            "in": 0.0,
+            "cm": 0.0
+          },
+          "maxwind": {
+            "mph": 10,
+            "kph": 16,
+            "dir": "SSW",
+            "degrees": 197
+          },
+          "avewind": {
+            "mph": 7,
+            "kph": 11,
+            "dir": "SSW",
+            "degrees": 197
+          },
+          "avehumidity": 79,
+          "maxhumidity": 0,
+          "minhumidity": 0
+        },
+        {
+          "date": {
+            "epoch": "1426201200",
+            "pretty": "7:00 PM EDT on March 12, 2015",
+            "day": 12,
+            "month": 3,
+            "year": 2015,
+            "yday": 70,
+            "hour": 19,
+            "min": "00",
+            "sec": 0,
+            "isdst": "1",
+            "monthname": "March",
+            "monthname_short": "Mar",
+            "weekday_short": "Thu",
+            "weekday": "Thursday",
+            "ampm": "PM",
+            "tz_short": "EDT",
+            "tz_long": "America/Indianapolis"
+          },
+          "period": 9,
+          "high": {
+            "fahrenheit": "55",
+            "celsius": "13"
+          },
+          "low": {
+            "fahrenheit": "36",
+            "celsius": "2"
+          },
+          "conditions": "Clear",
+          "icon": "clear",
+          "icon_url": "http://icons.wxug.com/i/c/k/clear.gif",
+          "skyicon": "",
+          "pop": 20,
+          "qpf_allday": {
+            "in": 0.00,
+            "mm": 0
+          },
+          "qpf_day": {
+            "in": 0.00,
+            "mm": 0
+          },
+          "qpf_night": {
+            "in": 0.00,
+            "mm": 0
+          },
+          "snow_allday": {
+            "in": 0.0,
+            "cm": 0.0
+          },
+          "snow_day": {
+            "in": 0.0,
+            "cm": 0.0
+          },
+          "snow_night": {
+            "in": 0.0,
+            "cm": 0.0
+          },
+          "maxwind": {
+            "mph": 10,
+            "kph": 16,
+            "dir": "NNE",
+            "degrees": 23
+          },
+          "avewind": {
+            "mph": 8,
+            "kph": 13,
+            "dir": "NNE",
+            "degrees": 23
+          },
+          "avehumidity": 73,
+          "maxhumidity": 0,
+          "minhumidity": 0
+        },
+        {
+          "date": {
+            "epoch": "1426287600",
+            "pretty": "7:00 PM EDT on March 13, 2015",
+            "day": 13,
+            "month": 3,
+            "year": 2015,
+            "yday": 71,
+            "hour": 19,
+            "min": "00",
+            "sec": 0,
+            "isdst": "1",
+            "monthname": "March",
+            "monthname_short": "Mar",
+            "weekday_short": "Fri",
+            "weekday": "Friday",
+            "ampm": "PM",
+            "tz_short": "EDT",
+            "tz_long": "America/Indianapolis"
+          },
+          "period": 10,
+          "high": {
+            "fahrenheit": "45",
+            "celsius": "7"
+          },
+          "low": {
+            "fahrenheit": "34",
+            "celsius": "1"
+          },
+          "conditions": "Partly Cloudy",
+          "icon": "partlycloudy",
+          "icon_url": "http://icons.wxug.com/i/c/k/partlycloudy.gif",
+          "skyicon": "",
+          "pop": 20,
+          "qpf_allday": {
+            "in": 0.00,
+            "mm": 0
+          },
+          "qpf_day": {
+            "in": 0.00,
+            "mm": 0
+          },
+          "qpf_night": {
+            "in": 0.00,
+            "mm": 0
+          },
+          "snow_allday": {
+            "in": 0.0,
+            "cm": 0.0
+          },
+          "snow_day": {
+            "in": 0.0,
+            "cm": 0.0
+          },
+          "snow_night": {
+            "in": 0.0,
+            "cm": 0.0
+          },
+          "maxwind": {
+            "mph": 20,
+            "kph": 32,
+            "dir": "NE",
+            "degrees": 41
+          },
+          "avewind": {
+            "mph": 13,
+            "kph": 21,
+            "dir": "NE",
+            "degrees": 41
+          },
+          "avehumidity": 55,
+          "maxhumidity": 0,
+          "minhumidity": 0
+        }
+      ]
+    }
+  }
+}

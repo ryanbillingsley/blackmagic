@@ -1,0 +1,18 @@
+mode: set
+github.com/ryanbillingsley/blackmagic/cmds/worker/main.go:21.13,35.16 8 0
+github.com/ryanbillingsley/blackmagic/cmds/worker/main.go:35.16,38.3 2 0
+github.com/ryanbillingsley/blackmagic/cmds/worker/main.go:42.91,46.16 3 1
+github.com/ryanbillingsley/blackmagic/cmds/worker/main.go:50.2,52.16 3 1
+github.com/ryanbillingsley/blackmagic/cmds/worker/main.go:57.2,57.54 1 1
+github.com/ryanbillingsley/blackmagic/cmds/worker/main.go:61.2,61.20 1 1
+github.com/ryanbillingsley/blackmagic/cmds/worker/main.go:46.16,49.3 2 0
+github.com/ryanbillingsley/blackmagic/cmds/worker/main.go:52.16,55.3 2 0
+github.com/ryanbillingsley/blackmagic/cmds/worker/main.go:57.54,59.3 1 0
+github.com/ryanbillingsley/blackmagic/cmds/worker/main.go:64.100,67.64 2 1
+github.com/ryanbillingsley/blackmagic/cmds/worker/main.go:92.2,92.18 1 1
+github.com/ryanbillingsley/blackmagic/cmds/worker/main.go:67.64,70.17 3 1
+github.com/ryanbillingsley/blackmagic/cmds/worker/main.go:75.3,76.17 2 1
+github.com/ryanbillingsley/blackmagic/cmds/worker/main.go:81.3,89.27 2 1
+github.com/ryanbillingsley/blackmagic/cmds/worker/main.go:70.17,73.4 2 0
+github.com/ryanbillingsley/blackmagic/cmds/worker/main.go:76.17,79.4 2 0
+github.com/ryanbillingsley/blackmagic/cmds/worker/main.go:95.97,110.2 6 1
