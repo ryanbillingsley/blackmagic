@@ -24,15 +24,21 @@ func main() {
 	apiKey := flag.String("api", "", "Your WUnderground API Key")
 	flag.Parse()
 
+	log.Println("Trying to connect to", *mongoUrl)
 	database := blackmagic.NewDatabase(*mongoUrl, *databaseName)
 	err := database.Connect()
+	handleErr(err)
 
 	worker := &Worker{Database: database}
 
 	res, err := worker.apiForecast(fmt.Sprintf("http://api.wunderground.com/api/%s/forecast10day/q/IN/Indianapolis.json", *apiKey))
+	handleErr(err)
 
 	_, err = worker.parseForecast(res)
+	handleErr(err)
+}
 
+func handleErr(err error) {
 	if err != nil {
 		log.Fatal(err)
 		panic(err)
