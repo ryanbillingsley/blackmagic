@@ -21,7 +21,7 @@ type Worker struct {
 func main() {
 	mongoUrl := flag.String("mongo", "localhost", "The mongo db address.  It can be as simple as `localhost` or involved as `mongodb://myuser:mypass@localhost:40001,otherhost:40001/mydb`")
 	databaseName := flag.String("db", "blackmagic", "The name of the database you are connecting to.  Defaults to blackmagic")
-	apiKey := flag.String("api key", "", "Your WUnderground API Key")
+	apiKey := flag.String("api", "", "Your WUnderground API Key")
 	flag.Parse()
 
 	database := blackmagic.NewDatabase(*mongoUrl, *databaseName)
