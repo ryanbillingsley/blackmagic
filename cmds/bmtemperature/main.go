@@ -1,8 +1,8 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
-	"io/ioutil"
 	"os"
 	"path/filepath"
 )
@@ -17,11 +17,18 @@ func main() {
 	_, err = os.Stat(deviceFile)
 	handleErr(err)
 
-	buf, err := ioutil.ReadFile(deviceFile)
+	file, err := os.Open(deviceFile)
 	handleErr(err)
+	defer file.Close()
 
-	s := string(buf)
-	fmt.Println("Device File Info", s)
+	scanner := bufio.NewScanner(file)
+	for scanner.Scan() {
+		fmt.Println(scanner.Text())
+	}
+
+	if err := scanner.Err(); err != nil {
+		panic(err)
+	}
 }
 
 func handleErr(err error) {
