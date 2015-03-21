@@ -23,7 +23,7 @@ func main() {
 
 	s := string(buf)
 
-	match, _ := regexp.MatchString("t=([0-9]{5-6})", s)
+	match, _ := regexp.MatchString(".*t=([0-9]{5-6})", s)
 	fmt.Println(match)
 }
 
