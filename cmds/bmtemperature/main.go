@@ -10,10 +10,10 @@ import (
 
 func main() {
 	base := "/sys/bus/w1/devices"
-	matches, err := filepath.Glob(fmt.Sprintf("%s/28*", base))
+	dirs, err := filepath.Glob(fmt.Sprintf("%s/28*", base))
 	handleErr(err)
 
-	deviceFile := filepath.Join(matches[0], "w1_slave")
+	deviceFile := filepath.Join(dirs[0], "w1_slave")
 
 	_, err = os.Stat(deviceFile)
 	handleErr(err)
@@ -23,8 +23,12 @@ func main() {
 
 	s := string(buf)
 
-	match, _ := regexp.MatchString(".*t=([0-9]{5-6})", s)
-	fmt.Println(match)
+	r, err := regexp.Compile(".*t=([0-9]{5,6})")
+	handleErr(err)
+
+	matches := r.FindStringSubmatch(s)
+
+	fmt.Println(matches[1])
 }
 
 func handleErr(err error) {
