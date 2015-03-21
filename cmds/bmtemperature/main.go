@@ -25,7 +25,7 @@ func main() {
 	s := string(buf)
 	temp, err := parseTemp(s)
 
-	fmt.Printf("Temp in F: %.2f", temp)
+	fmt.Printf("Temp in F: %.2f\n", temp)
 }
 
 func parseTemp(data string) (float64, error) {
