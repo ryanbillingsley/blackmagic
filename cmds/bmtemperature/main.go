@@ -6,6 +6,7 @@ import (
 	"os"
 	"path/filepath"
 	"regexp"
+	"strconv"
 )
 
 func main() {
@@ -22,13 +23,24 @@ func main() {
 	handleErr(err)
 
 	s := string(buf)
+	temp, err := parseTemp(s)
 
+	fmt.Println("Temp in F:", temp)
+}
+
+func parseTemp(data string) (float64, error) {
 	r, err := regexp.Compile(".*t=([0-9]{5,6})")
-	handleErr(err)
+	tempStr := r.FindStringSubmatch(data)[1]
+	temp, err := strconv.ParseFloat(tempStr, 64)
 
-	matches := r.FindStringSubmatch(s)
+	if err != nil {
+		return 0, err
+	}
 
-	fmt.Println(matches[1])
+	tempC := temp / 1000.0
+	tempF := tempC*1.8000 + 32.00
+
+	return tempF, nil
 }
 
 func handleErr(err error) {
