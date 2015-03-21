@@ -1,0 +1,33 @@
+{
+	"ImportPath": "github.com/ryanbillingsley/blackmagic",
+	"GoVersion": "go1.4.2",
+	"Deps": [
+		{
+			"ImportPath": "github.com/codegangsta/negroni",
+			"Comment": "v0.1-55-g1dd3ab0",
+			"Rev": "1dd3ab0ff59e13f5b73dcbf70703710aebe50d2f"
+		},
+		{
+			"ImportPath": "github.com/gorilla/context",
+			"Rev": "215affda49addc4c8ef7e2534915df2c8c35c6cd"
+		},
+		{
+			"ImportPath": "github.com/gorilla/mux",
+			"Rev": "e444e69cbd2e2e3e0749a2f3c717cec491552bbf"
+		},
+		{
+			"ImportPath": "github.com/remogatto/prettytest",
+			"Rev": "5eaee29090d31f7c15319885077cb2a29edd4c9c"
+		},
+		{
+			"ImportPath": "gopkg.in/mgo.v2",
+			"Comment": "r2015.01.24",
+			"Rev": "c6a7dce14133ccac2dcac3793f1d6e2ef048503a"
+		},
+		{
+			"ImportPath": "launchpad.net/gocheck",
+			"Comment": "87",
+			"Rev": "gustavo@niemeyer.net-20140225173054-xu9zlkf9kxhvow02"
+		}
+	]
+}
