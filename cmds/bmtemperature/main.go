@@ -1,10 +1,11 @@
 package main
 
 import (
-	"bufio"
 	"fmt"
+	"io/ioutil"
 	"os"
 	"path/filepath"
+	"regexp"
 )
 
 func main() {
@@ -17,18 +18,13 @@ func main() {
 	_, err = os.Stat(deviceFile)
 	handleErr(err)
 
-	file, err := os.Open(deviceFile)
+	buf, err := ioutil.ReadFile(deviceFile)
 	handleErr(err)
-	defer file.Close()
 
-	scanner := bufio.NewScanner(file)
-	for scanner.Scan() {
-		fmt.Println("Line: ", scanner.Text())
-	}
+	s := string(buf)
 
-	if err := scanner.Err(); err != nil {
-		panic(err)
-	}
+	match, _ := regexp.MatchString("t=([0-9]{5-6})", s)
+	fmt.Println(match)
 }
 
 func handleErr(err error) {
