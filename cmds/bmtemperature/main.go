@@ -52,12 +52,14 @@ func main() {
 
 	err = c.Insert(r)
 	handleErr(err)
+	fmt.Println("Inserted Reading:", r.Id)
 
 	c, err = worker.Database.Collection("days")
 	handleErr(err)
 
 	d.Readings = append(d.Readings, r.Id)
 	c.UpsertId(d.Id, d)
+	fmt.Println("Added Reading to Day:", d.Id, r.Id, d.Readings)
 
 	high, low, err := d.CurrentHighLow(worker.Database)
 	handleErr(err)

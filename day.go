@@ -44,7 +44,7 @@ func (day *Day) CurrentHighLow(db Database) (float64, float64, error) {
 		var r Reading
 		err := c.FindId(rId).One(&r)
 		if err != nil {
-			fmt.Println("Error finding reading", err)
+			fmt.Println("Error finding reading", err, rId)
 			return 0, 0, err
 		}
 
