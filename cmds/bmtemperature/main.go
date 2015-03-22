@@ -121,6 +121,7 @@ func parseTemp(data string) (float64, error) {
 }
 
 func handleErr(err error) {
+	log.Fatal(err)
 	if err != nil {
 		panic(err)
 	}
