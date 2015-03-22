@@ -50,7 +50,7 @@ func main() {
 	c, err := worker.Database.Collection("readings")
 	handleErr(err)
 
-	_, err = c.UpsertId(r.Id, r)
+	err = c.Insert(r)
 	handleErr(err)
 
 	d.Readings = append(d.Readings, r.Id)
