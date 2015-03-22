@@ -53,16 +53,17 @@ func main() {
 	err = c.Insert(r)
 	handleErr(err)
 
+	c, err = worker.Database.Collection("days")
+	handleErr(err)
+
 	d.Readings = append(d.Readings, r.Id)
+	c.UpsertId(d.Id, d)
 
 	high, low, err := d.CurrentHighLow(worker.Database)
 	handleErr(err)
 
 	d.High = high
 	d.Low = low
-
-	c, err = worker.Database.Collection("days")
-	handleErr(err)
 
 	c.UpsertId(d.Id, d)
 	fmt.Println("Saved day, done")
