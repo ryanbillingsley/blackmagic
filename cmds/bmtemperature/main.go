@@ -61,6 +61,9 @@ func main() {
 	d.High = high
 	d.Low = low
 
+	c, err = worker.Database.Collection("days")
+	handleErr(err)
+
 	c.UpsertId(d.Id, d)
 	fmt.Println("Saved day, done")
 }
