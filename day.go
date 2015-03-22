@@ -1,6 +1,7 @@
 package blackmagic
 
 import (
+	"fmt"
 	"sort"
 	"time"
 
@@ -48,6 +49,8 @@ func (day *Day) CurrentHighLow(db Database) (float64, float64, error) {
 
 		readings = append(readings, r)
 	}
+
+	fmt.Println("Readings", readings)
 
 	sort.Sort(ByTemperature(readings))
 
