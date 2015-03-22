@@ -53,10 +53,11 @@ func main() {
 	_, err = c.UpsertId(r.Id, r)
 	handleErr(err)
 
+	d.Readings = append(d.Readings, r.Id)
+
 	high, low, err := d.CurrentHighLow(worker.Database)
 	handleErr(err)
 
-	d.Readings = append(d.Readings, r.Id)
 	d.High = high
 	d.Low = low
 
