@@ -1,6 +1,7 @@
 package blackmagic
 
 import (
+	"sort"
 	"time"
 
 	"gopkg.in/mgo.v2/bson"
@@ -12,6 +13,9 @@ type Day struct {
 	Month     time.Month
 	Day       int
 	Forecasts []bson.ObjectId `json:",omitempty" bson:",omitempty"`
+	Readings  []bson.ObjectId `json:",omitempty" bson:",omitempty"`
+	High      float64
+	Low       float64
 }
 
 func (d *Day) SetDate(t time.Time) {
@@ -26,4 +30,29 @@ func (day *Day) AddForecast(f *Forecast, db Database) error {
 	err = c.UpdateId(day.Id, bson.M{"$push": bson.M{"forecasts": f.Id}})
 
 	return err
+}
+
+func (day *Day) CurrentHighLow(db Database) (float64, float64, error) {
+	c, err := db.Collection("readings")
+	if err != nil {
+		return 0, 0, err
+	}
+
+	var readings []Reading
+	for _, rId := range day.Readings {
+		var r Reading
+		err := c.FindId(rId, &r)
+		if err != nil {
+			return 0, 0, err
+		}
+
+		readings = append(readings, r)
+	}
+
+	sort.Sort(ByTemperature(readings))
+
+	high := readings[len(readings)-1]
+	low := readings[0]
+
+	return high.Temperature, low.Temperature, nil
 }
