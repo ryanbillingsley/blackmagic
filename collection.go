@@ -8,7 +8,7 @@ import (
 type Collection interface {
 	All(map[string]interface{}, []interface{}) error
 	Find(map[string]interface{}) *mgo.Query
-	FindId(bson.ObjectId, interface{}) error
+	FindId(bson.ObjectId) *mgo.Query
 	Insert(interface{}) error
 	UpdateId(bson.ObjectId, map[string]interface{}) error
 	UpsertId(interface{}, interface{}) (*mgo.ChangeInfo, error)
@@ -27,9 +27,8 @@ func (c *collection) Find(query map[string]interface{}) *mgo.Query {
 	return c.store.Find(query)
 }
 
-func (c *collection) FindId(id bson.ObjectId, result interface{}) error {
-	err := c.store.FindId(id).One(&result)
-	return err
+func (c *collection) FindId(id bson.ObjectId) *mgo.Query {
+	return c.store.FindId(id)
 }
 
 func (c *collection) Insert(newObject interface{}) error {
