@@ -42,7 +42,7 @@ func main() {
 
 	r := blackmagic.Reading{
 		Id:          bson.NewObjectId(),
-		CreatedAt:   time.Now(),
+		CreatedAt:   time.Now().Local(),
 		Temperature: temp,
 		Day:         d.Id,
 	}
@@ -71,7 +71,7 @@ func main() {
 func (worker *Worker) findDay() (blackmagic.Day, error) {
 	var d blackmagic.Day
 
-	t := time.Now()
+	t := time.Now().Local()
 	year, month, day := t.Date()
 
 	cd, err := worker.Database.Collection("days")

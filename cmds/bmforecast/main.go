@@ -127,7 +127,7 @@ func (worker *Worker) createForecast(fday blackmagic.ForecastDay) (*blackmagic.F
 		Low:        low,
 		Conditions: fday.Conditions,
 		QPF:        fday.QpfAllDay.Inches,
-		Date:       time.Now(),
+		Date:       time.Now().Local(),
 	}
 
 	cf, err := worker.Database.Collection("forecasts")
