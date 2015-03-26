@@ -127,12 +127,13 @@ func main() {
 			}
 		case r := <-poll:
 			data := make([]float64, 0)
-			upper := 50
-			if len(r) < 50 {
-				upper = len(r)
+			start := len(r) - 50
+
+			if start < 0 {
+				start = 0
 			}
 
-			for _, rd := range r[:upper] {
+			for _, rd := range r[start:] {
 				data = append(data, rd.Temperature)
 			}
 
