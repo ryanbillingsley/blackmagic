@@ -50,7 +50,7 @@ func main() {
 	lc.Border.Label = "24 Hour Temperature"
 	lc.Mode = "dot"
 	lc.Data = []float64{}
-	lc.Width = 35
+	lc.Width = 40
 	lc.Height = 16
 	lc.X = 0
 	lc.Y = 0
@@ -127,12 +127,16 @@ func main() {
 			}
 		case r := <-poll:
 			data := make([]float64, 0)
-			for _, rd := range r {
+			upper := 30
+			if len(r) < 30 {
+				upper = len(r)
+			}
+
+			for _, rd := range r[:upper] {
 				data = append(data, rd.Temperature)
 			}
 
 			draw(data)
-			//log.Println("Received reading", data)
 		}
 	}
 }
