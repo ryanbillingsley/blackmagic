@@ -50,7 +50,7 @@ func main() {
 	lc.Border.Label = "24 Hour Temperature"
 	lc.Mode = "dot"
 	lc.Data = []float64{}
-	lc.Width = 77
+	lc.Width = 35
 	lc.Height = 16
 	lc.X = 0
 	lc.Y = 0
