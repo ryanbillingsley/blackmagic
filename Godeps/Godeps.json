@@ -11,10 +11,6 @@
 			"Rev": "1dd3ab0ff59e13f5b73dcbf70703710aebe50d2f"
 		},
 		{
-			"ImportPath": "github.com/gizak/termui",
-			"Rev": "a1ab0ad33ecba23273238763e3f882affb3205ca"
-		},
-		{
 			"ImportPath": "github.com/gorilla/context",
 			"Rev": "215affda49addc4c8ef7e2534915df2c8c35c6cd"
 		},
@@ -34,6 +30,10 @@
 		{
 			"ImportPath": "github.com/remogatto/prettytest",
 			"Rev": "5eaee29090d31f7c15319885077cb2a29edd4c9c"
+		},
+		{
+			"ImportPath": "github.com/ryanbillingsley/termui",
+			"Rev": "4255aca7ac54d25d6afde1d7946213ed3091dc4f"
 		},
 		{
 			"ImportPath": "gopkg.in/mgo.v2",
