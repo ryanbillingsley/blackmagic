@@ -50,7 +50,7 @@ func main() {
 	lc.Border.Label = "24 Hour Temperature"
 	lc.Mode = "dot"
 	lc.Data = []float64{}
-	lc.Width = 40
+	lc.Width = 60
 	lc.Height = 16
 	lc.X = 0
 	lc.Y = 0
@@ -127,8 +127,8 @@ func main() {
 			}
 		case r := <-poll:
 			data := make([]float64, 0)
-			upper := 30
-			if len(r) < 30 {
+			upper := 50
+			if len(r) < 50 {
 				upper = len(r)
 			}
 
